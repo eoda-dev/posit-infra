@@ -7,4 +7,6 @@ alias get-workbench="sudo apt install rstudio-server"
 alias get-connect="sudo apt install rstudio-connect"
 alias status-workbench="sudo systemctl --no-pager -l status rstudio-server"
 alias status-connect="sudo systemctl --no-pager -l status rstudio-connect"
+alias restart-workbench="systemctl restart rstudio-server && sleep 2 && systemctl --no-pager -l status rstudio-server"
+alias restart="systemctl restart rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect"
 
