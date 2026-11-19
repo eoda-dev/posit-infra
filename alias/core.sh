@@ -12,4 +12,5 @@ alias restart="systemctl restart rstudio-connect && sleep 2 && systemctl --no-pa
 alias sysinfo="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/core/sysinfo.sh | sh"
 alias get-pro-drivers="sudo apt install rstudio-drivers"
 alias ls-pro-drivers="ls -l /opt/rstudio-drivers"
+alias configure-pro-drivers="sudo cp /etc/odbcinst.ini /etc/odbcinst.ini.bak && cat /opt/rstudio-drivers/odbcinst.ini.sample | sudo tee -a /etc/odbcinst.ini"
 
