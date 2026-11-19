@@ -10,4 +10,5 @@ alias status-connect="sudo systemctl --no-pager -l status rstudio-connect"
 alias restart-workbench="systemctl restart rstudio-server && sleep 2 && systemctl --no-pager -l status rstudio-server"
 alias restart="systemctl restart rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect"
 alias sysinfo="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/core/sysinfo.sh | sh"
+alias get-pro-drivers="sudo apt install rstudio-drivers"
 
