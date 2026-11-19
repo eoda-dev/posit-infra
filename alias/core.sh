@@ -13,6 +13,6 @@ alias sysinfo="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra
 alias get-pro-drivers="sudo apt install rstudio-drivers"
 alias ls-pro-drivers="ls -l /opt/rstudio-drivers"
 alias configure-pro-drivers="sudo cp /etc/odbcinst.ini /etc/odbcinst.ini.bak && cat /opt/rstudio-drivers/odbcinst.ini.sample | sudo tee -a /etc/odbcinst.ini"
-alias run-pg-test="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/pg-connection.sh | sh"
+alias run-pg-test="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/run-testdb.sh | sh"
 alias stop-pg-test="podman stop pg-test"
 
