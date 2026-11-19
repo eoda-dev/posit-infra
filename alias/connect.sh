@@ -1,4 +1,3 @@
-#!/bin/sh
 alias config="vi /etc/rstudio-connect/rstudio-connect.gcfg"
 alias restart="systemctl restart rstudio-connect && sleep 2 && systemctl --no-pager -l status rstudio-connect"
 alias status="systemctl --no-pager -l status rstudio-connect"
