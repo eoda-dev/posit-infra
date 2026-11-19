@@ -1,6 +1,8 @@
 #!/bin/sh
 set -eu
 
+sudo apt install -y podman
+
 NAME="${NAME:-gitea}"
 IMAGE="${IMAGE:-docker.io/gitea/gitea:latest}"   # Podman wants the full registry name; pin a version if you like
 HTTP_PORT="${HTTP_PORT:-3000}"

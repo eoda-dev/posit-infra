@@ -7,8 +7,8 @@ alias get-py="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/
 alias get-quarto="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/install/get-quarto.sh | sh"
 
 alias posit-apt="curl -1sLf https://dl.posit.co/public/pro/setup.deb.sh | sudo -E bash"
-alias get-workbench="sudo apt install rstudio-server"
-alias get-connect="sudo apt install rstudio-connect"
+alias get-workbench="sudo apt install -y rstudio-server"
+alias get-connect="sudo apt install -y rstudio-connect"
 
 alias status-workbench="sudo systemctl --no-pager -l status rstudio-server"
 alias status-connect="sudo systemctl --no-pager -l status rstudio-connect"
@@ -16,7 +16,7 @@ alias restart-workbench="sudo systemctl restart rstudio-server && sleep 2 && sud
 alias restart-connect="sudo systemctl restart rstudio-connect && sleep 2 && sudo systemctl --no-pager -l status rstudio-connect"
 alias sysinfo="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/core/sysinfo.sh | sh"
 
-alias get-pro-drivers="sudo apt install rstudio-drivers"
+alias get-pro-drivers="sudo apt install -y rstudio-drivers"
 alias ls-pro-drivers="ls -l /opt/rstudio-drivers"
 alias configure-pro-drivers="sudo cp /etc/odbcinst.ini /etc/odbcinst.ini.bak && cat /opt/rstudio-drivers/odbcinst.ini.sample | sudo tee -a /etc/odbcinst.ini"
 
