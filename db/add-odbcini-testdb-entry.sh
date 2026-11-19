@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/sh
+set -eu
 
 FILE=/etc/odbc.ini
 DSN=postgresql-test
@@ -18,7 +18,7 @@ BACKUP="$FILE.bak.$(date +%Y%m%d-%H%M%S)"
 sudo cp -p "$FILE" "$BACKUP"
 echo "Backup: $BACKUP"
 
-# append the entry (leading blank line separates it from the previous section)
+# append the entry
 sudo tee -a "$FILE" >/dev/null << 'EOF'
 
 [postgresql-test]
@@ -31,5 +31,9 @@ PWD = testpass
 EOF
 
 echo "Added [$DSN] to $FILE"
-odbcinst -j >/dev/null 2>&1 && isql -v "$DSN" 2>/dev/null </dev/null | head -3 || true
+
+# optional connection test
+if command -v isql >/dev/null 2>&1; then
+    echo "select 1" | isql -b "$DSN" || echo "Connection test failed (check driver name and credentials)."
+fi
 
