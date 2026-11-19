@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt install podman
+sudo apt install -y podman
 
 podman run -d --name pg-test \
   --rm \
