@@ -5,4 +5,6 @@ alias get-py="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/
 alias posit-apt="curl -1sLf https://dl.posit.co/public/pro/setup.deb.sh | sudo -E bash"
 alias get-workbench="sudo apt install rstudio-server"
 alias get-connect="sudo apt install rstudio-connect"
+alias status-workbench="sudo systemctl --no-pager -l status rstudio-server"
+alias status-connect="sudo systemctl --no-pager -l status rstudio-connect"
 
