@@ -58,10 +58,14 @@ Provider = SQlite
 ; echo https://packagemanager.posit.co/cran/__linux__/$(lsb_release -cs)/latest
 ;URL =
 
+[R]
+PositPackageManagerURLRewriting = force-binary
+PackageRepositoryResolution = strict
+External = Matrix
+
 [Python]
 Enabled = true
-Executable = /usr/bin/python3
-;Executable = /opt/python/3.13.18/bin/python3
+Executable = /opt/python/${PYTHON_VERSION}/bin/python3
 
 [Quarto]
 Enabled = true
