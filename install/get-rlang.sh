@@ -52,5 +52,11 @@ $SUDO apt-get install -y "${TMPDIR_R}/${DEB}"
 $SUDO ln -sf "/opt/R/${R_VERSION}/bin/R" /usr/local/bin/R
 $SUDO ln -sf "/opt/R/${R_VERSION}/bin/Rscript" /usr/local/bin/Rscript
 
+# Use Posit Package Manager binaries for this Ubuntu release (e.g. noble, resolute)
+RPROFILE="/opt/R/${R_VERSION}/lib/R/etc/Rprofile.site"
+echo "options(repos = c(CRAN = \"https://packagemanager.posit.co/cran/__linux__/${VERSION_CODENAME}/latest\"))" \
+  | $SUDO tee "$RPROFILE" >/dev/null
+echo "Wrote ${RPROFILE}"
+
 echo "Done: $(/usr/local/bin/R --version | head -n 1)"
 
