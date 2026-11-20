@@ -1,5 +1,5 @@
 [Server]
-Address = https//${FQDN}
+Address = https://${FQDN}
 ; ServerName = ""
 
 [HTTP]
