@@ -1,6 +1,6 @@
 [Server]
 Address = https://${FQDN}
-; ServerName = ""
+;ServerName = ""
 EmailProvider = "none"
 
 [HTTP]
@@ -12,6 +12,10 @@ Listen = ":443"
 Certificate = ${SSL_CERTIFICATE}
 Key = ${SSL_CERTIFICATE_KEY}
 MinimumTLS = 1.2
+
+[Server]
+; sudo rsync -a /var/lib/rstudio-connect/ ${CONNECT_DATA_DIR}
+DataDir = ${CONNECT_DATA_DIR}
 
 [Database]
 Provider = SQlite
@@ -62,4 +66,7 @@ Executable = /usr/bin/python3
 [Quarto]
 Enabled = true
 Executable = /usr/local/bin/quarto
+
+[Applications]
+BundleRetentionLimit = 3
 

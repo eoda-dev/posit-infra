@@ -31,3 +31,5 @@ export OAUTH_CLIENT_ID=
 export OAUTH_CLIENT_SECRET=
 export OAUTH_ISSUER=
 
+export CONNECT_DATA_DIR=/opt/connect-data
+
