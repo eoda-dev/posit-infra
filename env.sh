@@ -26,3 +26,8 @@ export PGPASSWORD_ENCRYPTED=
 export SSL_CERTIFICATE=
 export SSL_CERTIFICATE_KEY=
 
+# config/connect/rstudio-connect.gcfg [OAuth2]
+export OAUTH_CLIENT_ID=
+export OAUTH_CLIENT_SECRET=
+export OAUTH_ISSUER=
+
