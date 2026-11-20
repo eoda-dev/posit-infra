@@ -30,5 +30,5 @@ alias config-connect="sudo vi /etc/rstudio-connect/rstudio-connect.gcfg"
 alias logs-connect='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Connect Logs:\n"${NC} && sudo tail -n 15 /var/log/rstudio/rstudio-connect/rstudio-connect.log'
 alias license-status-connect="sudo /opt/rstudio-connect/bin/license-manager status"
 
-alias get-certificate='sudo apt install -y certbot && sudo certbot certonly --standalone -d "$CERTBOT_DOMAIN" --register-unsafely-without-email --agree-tos --non-interactive'
+alias get-certificate='sudo apt install -y certbot && sudo certbot certonly --standalone -d "$FQDN" --register-unsafely-without-email --agree-tos --non-interactive'
 
