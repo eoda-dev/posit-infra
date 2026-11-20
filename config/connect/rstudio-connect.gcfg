@@ -1,0 +1,19 @@
+[Server]
+Address = ${FQDN}
+; ServerName = ""
+
+[HTTP]
+NoWarning = true
+Listen = ":3939"
+
+[HTTPS]
+Listen = ":443"
+Certificate = ${SSL_CERTIFICATE}
+MinimumTLS = 1.2
+Key = ${SSL_CERTIFICATE_KEY}
+
+[Database]
+Provider = SQlite
+
+[SQLite]
+
