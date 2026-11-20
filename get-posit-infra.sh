@@ -1,15 +1,15 @@
 #!/bin/sh
-# get-posit-setup.sh - set up ~/.posit-setup with env.sh, the aliases and an activate script.
+# get-posit-infra.sh - set up ~/.posit-infra with env.sh, the aliases and an activate script.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/get-posit-setup.sh | sh
-#   . ~/.posit-setup/activate
+#   curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/get-posit-infra.sh | sh
+#   . ~/.posit-infra/activate
 #
-# Override the target dir with: POSIT_SETUP_DIR=/some/dir
+# Override the target dir with: POSIT_INFRA_DIR=/some/dir
 set -eu
 
 BASE_URL="https://raw.githubusercontent.com/eoda-dev/posit-infra/main"
-SETUP_DIR="${POSIT_SETUP_DIR:-$HOME/.posit-setup}"
+SETUP_DIR="${POSIT_INFRA_DIR:-$HOME/.posit-infra}"
 
 mkdir -p "$SETUP_DIR"
 
