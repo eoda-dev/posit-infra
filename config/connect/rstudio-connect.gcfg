@@ -3,6 +3,9 @@ Address = https://${FQDN}
 ;ServerName = ""
 EmailProvider = "none"
 
+; sudo rsync -a /var/lib/rstudio-connect/ ${CONNECT_DATA_DIR}
+;DataDir = ${CONNECT_DATA_DIR}
+
 [HTTP]
 NoWarning = true
 Listen = ":3939"
@@ -12,10 +15,6 @@ Listen = ":443"
 Certificate = ${SSL_CERTIFICATE}
 Key = ${SSL_CERTIFICATE_KEY}
 MinimumTLS = 1.2
-
-[Server]
-; sudo rsync -a /var/lib/rstudio-connect/ ${CONNECT_DATA_DIR}
-DataDir = ${CONNECT_DATA_DIR}
 
 [Database]
 Provider = SQlite
