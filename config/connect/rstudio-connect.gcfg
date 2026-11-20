@@ -1,6 +1,7 @@
 [Server]
 Address = https://${FQDN}
 ; ServerName = ""
+EmailProvider = "none"
 
 [HTTP]
 NoWarning = true
@@ -9,11 +10,28 @@ Listen = ":3939"
 [HTTPS]
 Listen = ":443"
 Certificate = ${SSL_CERTIFICATE}
-MinimumTLS = 1.2
 Key = ${SSL_CERTIFICATE_KEY}
+MinimumTLS = 1.2
 
 [Database]
 Provider = SQlite
 
 [SQLite]
+
+;[Database]
+;Provider = postgres
+;MaxIdleConnections = 5
+;MaxOpenConnections = 10
+;ConnectionMaxLifetime = 60s
+
+;[Postgres]
+;Password = ${PGPASSWORD_ENCRYPED}
+;URL = "postgres://${PGUSER}@${PGHOST}/${PGDATABASE}"
+;URL = "postgres://${PGUSER}@${PGHOST}/${PGDATABASE}?sslmode=disable"
+;URL = "postgres://${PGUSER}@${PGHOST}/${PGDATABASE}?options=-csearch_path=${PG_SCHEMA_CONNECT}"
+;URL = "postgres://${PGUSER}@${PGHOST}/${PGDATABASE}?sslmode=disable&options=-csearch_path=${PG_SCHEMA_CONNECT}"
+
+;AzureTenantId = "our-tenant-id"
+;AzureClientId = "example"
+;AzureClientSecret = <encrypted, Base64-encoded client secret>
 

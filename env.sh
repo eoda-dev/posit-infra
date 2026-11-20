@@ -11,11 +11,14 @@ export PYTHON_VERSION=3.13.18
 export QUARTO_VERSION=1.9.38
 
 # db/pg-connection.sh
-#export PGHOST="${PGHOST:-127.0.0.1}"
-#export PGPORT="${PGPORT:-5432}"
-#export PGDATABASE="${PGDATABASE:-testdb}"
-#export PGUSER="${PGUSER:-testuser}"
-#export PGPASSWORD="${PGPASSWORD:-testpass}"
+export PGHOST=127.0.0.1
+export PGPORT=5432
+export PGDATABASE=testdb
+export PGUSER=testuser
+export PGPASSWORD=testpass
+
+# e.g. echo 'password' | enc-value-connect
+export PGPASSWORD_ENCRYPTED=
 
 # db/pg-connection-r.sh
 #export PG_DSN="${PG_DSN:-postgresql-test}"

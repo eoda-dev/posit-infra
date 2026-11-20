@@ -34,3 +34,5 @@ alias get-certificate='sudo apt install -y certbot && sudo certbot certonly --st
 
 alias basic-config-connect="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/config/connect/rstudio-connect.gcfg | envsubst"
 
+alias enc-value-connect="sudo /opt/rstudio-connect/bin/rscadmin encrypt-config-value"
+
