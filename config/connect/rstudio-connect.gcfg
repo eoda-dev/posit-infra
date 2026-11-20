@@ -16,13 +16,12 @@ MinimumTLS = 1.2
 [Database]
 Provider = SQlite
 
-[SQLite]
-
-;[Database]
 ;Provider = postgres
 ;MaxIdleConnections = 5
 ;MaxOpenConnections = 10
 ;ConnectionMaxLifetime = 60s
+
+[SQLite]
 
 ;[Postgres]
 ;Password = ${PGPASSWORD_ENCRYPTED}
