@@ -34,3 +34,31 @@ Provider = SQlite
 ;AzureClientId = "example"
 ;AzureClientSecret = <encrypted, Base64-encoded client secret>
 
+;Authentication]
+;Provider = "oauth2"
+
+;[OAuth2]
+;ClientId = "${OAUTH_CLIENT_ID}"
+;ClientSecret = "${OAUTH_CLIENT_SECRET}"
+;OpenIDConnectIssuer = "${OAUTH_ISSUER}"
+;RequireUsernameClaim = true
+
+;FirstNameClaim = "name"
+;LastNameClaim = "preferred_username"
+
+;Scopes = "openid profile email groups"
+;GroupsClaim = "groups"
+;GroupsAutoProvision = true
+
+[RPackageRepository "CRAN"]
+URL = "https://packagemanager.posit.co/cran/__linux__/resolute/latest"
+
+[Python]
+Enabled = true
+Executable = /usr/bin/python3
+;Executable = /opt/python/3.13.18/bin/python3
+
+[Quarto]
+Enabled = true
+Executable = /usr/local/bin/quarto
+
