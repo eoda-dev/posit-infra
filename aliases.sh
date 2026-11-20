@@ -39,3 +39,5 @@ alias basic-config-connect="curl -fsSL https://raw.githubusercontent.com/eoda-de
 
 alias enc-value-connect="sudo /opt/rstudio-connect/bin/rscadmin encrypt-config-value"
 
+alias rpm-binary-url="echo https://packagemanager.posit.co/cran/__linux__/$(lsb_release -cs)/latest"
+
