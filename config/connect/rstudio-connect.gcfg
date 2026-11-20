@@ -25,7 +25,7 @@ Provider = SQlite
 ;ConnectionMaxLifetime = 60s
 
 ;[Postgres]
-;Password = ${PGPASSWORD_ENCRYPED}
+;Password = ${PGPASSWORD_ENCRYPTED}
 ;URL = "postgres://${PGUSER}@${PGHOST}/${PGDATABASE}"
 ;URL = "postgres://${PGUSER}@${PGHOST}/${PGDATABASE}?sslmode=disable"
 ;URL = "postgres://${PGUSER}@${PGHOST}/${PGDATABASE}?options=-csearch_path=${PG_SCHEMA_CONNECT}"
