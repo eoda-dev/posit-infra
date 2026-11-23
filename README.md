@@ -1,11 +1,11 @@
 # posit-infra
 
 ```bash
-# download env.sh (curl or wget), edit the settings, then source it (bash/zsh)
-curl -fsSL -O https://raw.githubusercontent.com/eoda-dev/posit-infra/main/env.sh
+# download posit-env.sh (curl or wget), edit the settings, then source it (bash/zsh)
+curl -fsSL -O https://raw.githubusercontent.com/eoda-dev/posit-infra/main/posit-env.sh
 # or
-wget -q https://raw.githubusercontent.com/eoda-dev/posit-infra/main/env.sh
-source env.sh
+wget -q https://raw.githubusercontent.com/eoda-dev/posit-infra/main/posit-env.sh
+source posit-env.sh
 
 # aliases for current session only
 source <(curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/aliases.sh)
