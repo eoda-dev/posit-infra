@@ -2,7 +2,7 @@
 set -eu
 
 FILE=/etc/odbc.ini
-DSN=postgresql-test
+DSN="${ODBCINI_DSN:-postgresql-test}"
 
 # create the file if it doesn't exist yet
 sudo touch "$FILE"
@@ -19,9 +19,9 @@ sudo cp -p "$FILE" "$BACKUP"
 echo "Backup: $BACKUP"
 
 # append the entry
-sudo tee -a "$FILE" >/dev/null << 'EOF'
+sudo tee -a "$FILE" >/dev/null << EOF
 
-[postgresql-test]
+[$DSN]
 Driver = PostgreSQL
 Server = 127.0.0.1
 Port = 5432
