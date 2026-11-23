@@ -23,11 +23,11 @@ sudo tee -a "$FILE" >/dev/null << EOF
 
 [$DSN]
 Driver = PostgreSQL
-Server = 127.0.0.1
-Port = 5432
-Database = testdb
-UID = testuser
-PWD = testpass
+Server = ${PGHOST:-127.0.0.1}
+Port = ${PGPORT:-5432}
+Database = ${PGDATABASE:-testdb}
+UID = ${PGUSER:-testuser}
+PWD = ${PGPASSWORD:-testpass}
 EOF
 
 echo "Added [$DSN] to $FILE"
