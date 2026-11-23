@@ -6,7 +6,7 @@ alias get-r="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/m
 alias get-py="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/install/get-python.sh | sh"
 alias get-quarto="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/install/get-quarto.sh | sh"
 
-alias posit-apt="curl -1sLf https://dl.posit.co/public/pro/setup.deb.sh | sudo -E bash"
+alias posit-apt="curl -1sLf https://dl.posit.co/public/pro/setup.deb.sh | sudo bash"
 alias get-workbench="sudo apt install -y rstudio-server"
 alias get-connect="sudo apt install -y rstudio-connect"
 
