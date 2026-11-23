@@ -35,7 +35,7 @@ export OAUTH_ISSUER=
 
 # export OAUTH_CLIENT_SECRET_ENCRYPTED=$(echo $OAUTH_CLIENT_SECRET | enc-value-connect)
 
-export CONNECT_DATA_DIR=/opt/connect-data
+export CONNECT_DATA_DIR=/var/lib/rstudio-connect
 
 # export FOO=$(echo $PGPASSWORD | base64)
 
