@@ -33,3 +33,7 @@ export OAUTH_ISSUER=
 
 export CONNECT_DATA_DIR=/opt/connect-data
 
+export FOO=$(echo $PGPASSWORD | base64)
+
+export CONNECT_CONFIG_TPL=./config/connect/rstudio-connect.gcfg
+
