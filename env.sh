@@ -33,13 +33,13 @@ export OAUTH_CLIENT_ID=
 export OAUTH_CLIENT_SECRET=
 export OAUTH_ISSUER=
 
-# export OAUTH_CLIENT_SECRET_ENCRYPTED=$(echo $OAUTH_CLIENT_SECRET | enc-value-connect)
+export OAUTH_CLIENT_SECRET_ENCRYPTED=$(echo $OAUTH_CLIENT_SECRET | enc-value-connect)
 
 export CONNECT_DATA_DIR=/opt/connect-data
 
 # export FOO=$(echo $PGPASSWORD | base64)
 
-export R_PACKAGE_REPOSITORY=https://packagemanager.posit.co/cran/__linux__/$(lsb_releases -cs)/latest
+export R_PACKAGE_REPOSITORY=https://packagemanager.posit.co/cran/__linux__/$(lsb_release -cs)/latest
 
 # export BAR=FOO
 
