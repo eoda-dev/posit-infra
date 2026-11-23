@@ -55,7 +55,7 @@ Provider = SQlite
 
 [RPackageRepository "CRAN"]
 ; echo https://packagemanager.posit.co/cran/__linux__/$(lsb_release -cs)/latest
-;URL =
+;URL = ${R_PACKAGE_REPOSITORY}
 
 [R]
 PositPackageManagerURLRewriting = force-binary
