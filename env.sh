@@ -2,11 +2,6 @@
 export FQDN=
 
 export CONNECT_CONFIG_TPL=./config/connect/rstudio-connect.gcfg
-# Download the template from posit-infra if it isn't there yet
-if [ ! -f "$CONNECT_CONFIG_TPL" ]; then
-  echo "Downloading $CONNECT_CONFIG_TPL"
-  mkdir -p "$(dirname "$CONNECT_CONFIG_TPL")" && curl -fsSL -o "$CONNECT_CONFIG_TPL" https://raw.githubusercontent.com/eoda-dev/posit-infra/main/config/connect/rstudio-connect.gcfg || true
-fi
 
 # install/get-rlang.sh
 export R_VERSION=4.6.2
@@ -49,5 +44,11 @@ export R_PACKAGE_REPOSITORY=https://packagemanager.posit.co/cran/__linux__/$(lsb
 # export BAR=FOO
 
 # ---
+# Download connect template if it isn't there yet
+if [ ! -f "$CONNECT_CONFIG_TPL" ]; then
+  echo "Downloading $CONNECT_CONFIG_TPL"
+  mkdir -p "$(dirname "$CONNECT_CONFIG_TPL")" && curl -fsSL -o "$CONNECT_CONFIG_TPL" https://raw.githubusercontent.com/eoda-dev/posit-infra/main/config/connect/rstudio-connect.gcfg || true
+fi
+
 . <(curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/aliases.sh)
 
