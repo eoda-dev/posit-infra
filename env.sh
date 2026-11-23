@@ -12,7 +12,7 @@ export PYTHON_VERSION=3.13.18
 # install/get-quarto.sh
 export QUARTO_VERSION=1.9.38
 
-# db/pg-connection.sh
+# db
 export PGHOST=127.0.0.1
 export PGPORT=5432
 export PGDATABASE=testdb
