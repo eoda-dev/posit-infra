@@ -33,7 +33,7 @@ export OAUTH_CLIENT_ID=
 export OAUTH_CLIENT_SECRET=
 export OAUTH_ISSUER=
 
-export OAUTH_CLIENT_SECRET_ENCRYPTED=$(echo $OAUTH_CLIENT_SECRET | enc-value-connect)
+# export OAUTH_CLIENT_SECRET_ENCRYPTED=$(echo $OAUTH_CLIENT_SECRET | enc-value-connect)
 
 export CONNECT_DATA_DIR=/opt/connect-data
 
