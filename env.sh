@@ -43,3 +43,6 @@ export R_PACKAGE_REPOSITORY=https://packagemanager.posit.co/cran/__linux__/$(lsb
 
 # export BAR=FOO
 
+# ---
+. <(curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/aliases.sh)
+
