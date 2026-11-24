@@ -30,6 +30,7 @@ alias run-gitea="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-inf
 alias stop-gitea="podman stop gitea"
 
 alias config-connect="sudo vi /etc/rstudio-connect/rstudio-connect.gcfg"
+alias backup-config-connect='(f=/etc/rstudio-connect/rstudio-connect.gcfg; b="$f.bak.$(date +%Y%m%d-%H%M%S)"; sudo cp -p "$f" "$b" && echo "Backup: $b")'
 alias logs-connect='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Connect Logs:\n"${NC} && sudo tail -n 15 /var/log/rstudio/rstudio-connect/rstudio-connect.log'
 alias license-status-connect="sudo /opt/rstudio-connect/bin/license-manager status"
 
