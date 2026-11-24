@@ -25,6 +25,9 @@ export PGPASSWORD=testpass
 # db/add-odbcini-entry.sh, db/pg-connection-r.sh
 export ODBCINI_DSN=postgresql-test
 
+# db/run-testdb.sh (run-pg-test, stop-pg-test)
+export PG_CONTAINER=pg-test
+
 export SSL_CERTIFICATE=
 export SSL_CERTIFICATE_KEY=
 
