@@ -2,7 +2,7 @@
 set -eu
 
 # Connection settings, override via env vars, e.g.:
-#   PGHOST=db.example.com PGUSER=alice PGPASSWORD=secret ./test-pg-connection.sh
+#   PGHOST=db.example.com PGUSER=alice PGPASSWORD=secret ./test-pg-conn.sh
 PGHOST="${PGHOST:-127.0.0.1}"
 PGPORT="${PGPORT:-5432}"
 PGDATABASE="${PGDATABASE:-testdb}"
