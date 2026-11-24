@@ -24,7 +24,7 @@ alias run-pg-test="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-i
 alias stop-pg-test="podman stop pg-test"
 alias test-pg-conn="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/test-pg-connection.sh | sh"
 alias test-odbcini-r="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/pg-connection-r.sh | sh"
-alias odbcini-testdb="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/add-odbcini-testdb-entry.sh | sh"
+alias add-odbcini-entry="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/add-odbcini-entry.sh | sh"
 alias get-r-pkgs="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/rlang/install-packages.sh | sh"
 
 alias run-gitea="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/containers/run-gitea.sh | sh"

@@ -22,7 +22,7 @@ export PGPASSWORD=testpass
 # e.g. echo 'password' | enc-value-connect
 # export PGPASSWORD_ENCRYPTED=$(echo $PGPASSWORD | enc-value-connect)
 
-# db/add-odbcini-testdb-entry.sh, db/pg-connection-r.sh
+# db/add-odbcini-entry.sh, db/pg-connection-r.sh
 export ODBCINI_DSN=postgresql-test
 
 export SSL_CERTIFICATE=
