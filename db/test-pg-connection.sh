@@ -8,7 +8,9 @@ PGPORT="${PGPORT:-5432}"
 PGDATABASE="${PGDATABASE:-testdb}"
 PGUSER="${PGUSER:-testuser}"
 PGPASSWORD="${PGPASSWORD:-testpass}"
+# Driver name as listed in /etc/odbcinst.ini
+ODBC_DRIVER="${ODBC_DRIVER:-PostgreSQL}"
 
 sudo apt install -y unixodbc odbc-postgresql
 
-isql -v -k "DRIVER={PostgreSQL Unicode};SERVER=${PGHOST};PORT=${PGPORT};DATABASE=${PGDATABASE};UID=${PGUSER};PWD=${PGPASSWORD}"
+isql -v -k "DRIVER={${ODBC_DRIVER}};SERVER=${PGHOST};PORT=${PGPORT};DATABASE=${PGDATABASE};UID=${PGUSER};PWD=${PGPASSWORD}"
