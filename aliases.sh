@@ -23,7 +23,7 @@ alias configure-pro-drivers="sudo cp /etc/odbcinst.ini /etc/odbcinst.ini.bak && 
 alias run-pg-test="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/run-testdb.sh | sh"
 alias stop-pg-test='podman stop "${PG_CONTAINER:-pg-test}"'
 alias test-pg-conn="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/test-pg-connection.sh | sh"
-alias test-odbcini-r="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/pg-connection-r.sh | sh"
+alias test-odbcini-r="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/test-pg-conn-r.sh | sh"
 alias add-odbcini-entry="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/add-odbcini-entry.sh | sh"
 alias get-r-pkgs="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/rlang/install-packages.sh | sh"
 
