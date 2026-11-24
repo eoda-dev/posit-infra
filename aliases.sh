@@ -25,6 +25,7 @@ alias stop-pg-test='podman stop "${PG_CONTAINER:-pg-test}"'
 alias test-pg-conn="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/test-pg-conn.sh | sh"
 alias test-odbcini-r="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/test-pg-conn-r.sh | sh"
 alias add-odbcini-entry="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/db/add-odbcini-entry.sh | sh"
+alias config-odbcini="sudo vim /etc/odbc.ini"
 alias get-r-pkgs="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/rlang/install-packages.sh | sh"
 
 alias run-gitea="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/containers/run-gitea.sh | sh"
