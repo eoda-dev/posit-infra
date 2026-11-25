@@ -5,6 +5,7 @@ alias ls-quarto="ls -l /opt/quarto"
 alias get-r="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/install/get-rlang.sh | sh"
 alias get-py="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/install/get-python.sh | sh"
 alias get-quarto="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/install/get-quarto.sh | sh"
+alias get-sys-deps="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/install/get-sys-deps.sh | sh"
 
 alias posit-apt="curl -1sLf https://dl.posit.co/public/pro/setup.deb.sh | sudo bash"
 alias get-workbench="sudo apt install -y rstudio-server"
