@@ -1,3 +1,7 @@
+# os_release <- readLines("/etc/os-release")
+# codename <- sub("^VERSION_CODENAME=", "", grep("^VERSION_CODENAME=", os_release, value = TRUE))
+# options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/", codename, "/latest")))
+
 library(shiny)
 
 albums <- data.frame(

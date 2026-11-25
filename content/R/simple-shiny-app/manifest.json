@@ -11,8 +11,8 @@
   },
   "packages": {
     "R6": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "R6",
         "Title": "Encapsulated Classes with Reference Semantics",
@@ -38,8 +38,8 @@
       }
     },
     "Rcpp": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "Rcpp",
         "Title": "Seamless R and C++ Integration",
@@ -67,8 +67,8 @@
       }
     },
     "base64enc": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "base64enc",
         "Version": "0.1-3",
@@ -89,8 +89,8 @@
       }
     },
     "bslib": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "bslib",
         "Title": "Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'",
@@ -122,8 +122,8 @@
       }
     },
     "cachem": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "cachem",
         "Version": "1.1.0",
@@ -149,8 +149,8 @@
       }
     },
     "cli": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "cli",
         "Title": "Helpers for Developing Command Line Interfaces",
@@ -178,8 +178,8 @@
       }
     },
     "commonmark": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "commonmark",
         "Type": "Package",
@@ -204,8 +204,8 @@
       }
     },
     "crayon": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "crayon",
         "Title": "Colored Terminal Output",
@@ -231,8 +231,8 @@
       }
     },
     "digest": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "digest",
         "Authors@R": "c(person(\"Dirk\", \"Eddelbuettel\", role = c(\"aut\", \"cre\"), email = \"edd@debian.org\",\n                    comment = c(ORCID = \"0000-0001-6419-907X\")),\n             person(\"Antoine\", \"Lucas\", role=\"ctb\"),\n             person(\"Jarek\", \"Tuszynski\", role=\"ctb\"),\n             person(\"Henrik\", \"Bengtsson\", role=\"ctb\", comment = c(ORCID = \"0000-0002-7579-5165\")),\n             person(\"Simon\", \"Urbanek\", role=\"ctb\", comment = c(ORCID = \"0000-0003-2297-1732\")),\n             person(\"Mario\", \"Frasca\", role=\"ctb\"),\n             person(\"Bryan\", \"Lewis\", role=\"ctb\"),\n             person(\"Murray\", \"Stokely\", role=\"ctb\"),\n             person(\"Hannes\", \"Muehleisen\", role=\"ctb\"),\n             person(\"Duncan\", \"Murdoch\", role=\"ctb\"),\n             person(\"Jim\", \"Hester\", role=\"ctb\"),\n             person(\"Wush\", \"Wu\", role=\"ctb\", comment = c(ORCID = \"0000-0001-5180-0567\")),\n             person(\"Qiang\", \"Kou\", role=\"ctb\", comment = c(ORCID = \"0000-0001-6786-5453\")),\n             person(\"Thierry\", \"Onkelinx\", role=\"ctb\", comment = c(ORCID = \"0000-0001-8804-4216\")),\n             person(\"Michel\", \"Lang\", role=\"ctb\", comment = c(ORCID = \"0000-0001-9754-0393\")),\n             person(\"Viliam\", \"Simko\", role=\"ctb\"),\n             person(\"Kurt\", \"Hornik\", role=\"ctb\", comment = c(ORCID = \"0000-0003-4198-9911\")),\n             person(\"Radford\", \"Neal\", role=\"ctb\", comment = c(ORCID = \"0000-0002-2473-3407\")),\n             person(\"Kendon\", \"Bell\", role=\"ctb\", comment = c(ORCID = \"0000-0002-9093-8312\")),\n             person(\"Matthew\", \"de Queljoe\", role=\"ctb\"),\n             person(\"Dmitry\", \"Selivanov\", role=\"ctb\"),\n             person(\"Ion\", \"Suruceanu\", role=\"ctb\"),\n             person(\"Bill\", \"Denney\", role=\"ctb\"),\n             person(\"Dirk\", \"Schumacher\", role=\"ctb\"),\n             person(\"András\", \"Svraka\", role=\"ctb\"),\n             person(\"Sergey\", \"Fedorov\", role=\"ctb\"),\n             person(\"Will\", \"Landau\", role=\"ctb\", comment = c(ORCID = \"0000-0003-1878-3253\")),\n             person(\"Floris\", \"Vanderhaeghe\", role=\"ctb\", comment = c(ORCID = \"0000-0002-6378-6229\")),\n             person(\"Kevin\", \"Tappe\", role=\"ctb\"),\n             person(\"Harris\", \"McGehee\", role=\"ctb\"),\n             person(\"Tim\", \"Mastny\", role=\"ctb\"),\n             person(\"Aaron\", \"Peikert\", role=\"ctb\", comment = c(ORCID = \"0000-0001-7813-818X\")),\n             person(\"Mark\", \"van der Loo\", role=\"ctb\", comment = c(ORCID = \"0000-0002-9807-4686\")),\n             person(\"Chris\", \"Muir\", role=\"ctb\", comment = c(ORCID = \"0000-0003-2555-3878\")),\n             person(\"Moritz\", \"Beller\", role=\"ctb\", comment = c(ORCID = \"0000-0003-4852-0526\")),\n             person(\"Sebastian\", \"Campbell\", role=\"ctb\"),\n             person(\"Winston\", \"Chang\", role=\"ctb\", comment = c(ORCID = \"0000-0002-1576-2126\")),\n             person(\"Dean\", \"Attali\", role=\"ctb\", comment = c(ORCID = \"0000-0002-5645-3493\")),\n             person(\"Michael\", \"Chirico\", role=\"ctb\", comment = c(ORCID = \"0000-0003-0787-087X\")),\n             person(\"Kevin\", \"Ushey\", role=\"ctb\"))",
@@ -258,8 +258,8 @@
       }
     },
     "fastmap": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "fastmap",
         "Title": "Fast Data Structures",
@@ -282,8 +282,8 @@
       }
     },
     "fontawesome": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "fontawesome",
@@ -311,8 +311,8 @@
       }
     },
     "fs": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "fs",
         "Title": "Cross-Platform File System Operations Based on 'libuv'",
@@ -344,8 +344,8 @@
       }
     },
     "glue": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "glue",
         "Title": "Interpreted String Literals",
@@ -375,8 +375,8 @@
       }
     },
     "htmltools": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "htmltools",
@@ -406,8 +406,8 @@
       }
     },
     "httpuv": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "httpuv",
@@ -436,8 +436,8 @@
       }
     },
     "jquerylib": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "jquerylib",
         "Title": "Obtain 'jQuery' as an HTML Dependency Object",
@@ -460,8 +460,8 @@
       }
     },
     "jsonlite": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "jsonlite",
         "Version": "2.0.0",
@@ -486,8 +486,8 @@
       }
     },
     "later": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "later",
         "Type": "Package",
@@ -514,8 +514,8 @@
       }
     },
     "lifecycle": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "lifecycle",
         "Title": "Manage the Life Cycle of your Package Functions",
@@ -543,8 +543,8 @@
       }
     },
     "magrittr": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "magrittr",
@@ -572,8 +572,8 @@
       }
     },
     "memoise": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "memoise",
         "Title": "'Memoisation' of Functions",
@@ -597,8 +597,8 @@
       }
     },
     "mime": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "mime",
         "Type": "Package",
@@ -622,8 +622,8 @@
       }
     },
     "promises": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "promises",
@@ -652,8 +652,8 @@
       }
     },
     "rappdirs": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "rappdirs",
@@ -680,8 +680,8 @@
       }
     },
     "rlang": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "rlang",
         "Version": "1.2.0",
@@ -712,8 +712,8 @@
       }
     },
     "sass": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "sass",
@@ -741,8 +741,8 @@
       }
     },
     "shiny": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "shiny",
         "Type": "Package",
@@ -772,8 +772,8 @@
       }
     },
     "sourcetools": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "sourcetools",
         "Type": "Package",
@@ -796,8 +796,8 @@
       }
     },
     "withr": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "withr",
         "Title": "Run Code 'With' Temporarily Modified Global State",
@@ -826,8 +826,8 @@
       }
     },
     "xtable": {
-      "Source": "CRAN_DE",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "xtable",
         "Version": "1.8-4",
@@ -854,7 +854,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "083d5006ed0942b68fb63b16b16d3570"
+      "checksum": "23e16ce32b26d3b09441f78e51129591"
     }
   },
   "users": null
