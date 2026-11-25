@@ -31,6 +31,9 @@ alias get-r-pkgs="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-in
 alias run-gitea="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/containers/run-gitea.sh | sh"
 alias stop-gitea="podman stop gitea"
 
+alias run-rstudio="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/containers/run-rstudio.sh | sh"
+alias stop-rstudio='podman stop "${RSTUDIO_CONTAINER:-rstudio}"'
+
 alias config-connect="sudo vi /etc/rstudio-connect/rstudio-connect.gcfg"
 alias backup-config-connect='(f=/etc/rstudio-connect/rstudio-connect.gcfg; b="$f.bak.$(date +%Y%m%d-%H%M%S)"; sudo cp -p "$f" "$b" && echo "Backup: $b")'
 alias write-config-connect="sudo tee /etc/rstudio-connect/rstudio-connect.gcfg >/dev/null"
