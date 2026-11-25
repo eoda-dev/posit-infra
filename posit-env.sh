@@ -19,6 +19,9 @@ export PGDATABASE=testdb
 export PGUSER=testuser
 export PGPASSWORD=testpass
 
+# config/connect/rstudio-connect.gcfg [Postgres] search_path
+export PG_SCHEMA_CONNECT=connect
+
 # e.g. echo 'password' | enc-value-connect
 # export PGPASSWORD_ENCRYPTED=$(echo $PGPASSWORD | enc-value-connect)
 
