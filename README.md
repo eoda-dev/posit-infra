@@ -15,6 +15,6 @@ basic-config-connect | sudo tee /etc/rstudio-connect/rstudio-connect.gcfg
 
 # write connect config from your own template (back up the current one first)
 backup-config-connect
-my-config-connect | write-config-connect
+render-config-connect | write-config-connect
 ```
 

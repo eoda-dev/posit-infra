@@ -40,8 +40,8 @@ alias license-status-connect="sudo /opt/rstudio-connect/bin/license-manager stat
 alias get-certificate='sudo apt install -y certbot && sudo certbot certonly --standalone -d "$FQDN" --register-unsafely-without-email --agree-tos --non-interactive'
 
 alias basic-config-connect="curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/config/connect/rstudio-connect.gcfg | envsubst"
-alias my-config-connect='envsubst < "$CONNECT_CONFIG_TPL"'
-alias diff-config-connect='my-config-connect | sudo diff -u --label /etc/rstudio-connect/rstudio-connect.gcfg --label my-config-connect /etc/rstudio-connect/rstudio-connect.gcfg -'
+alias render-config-connect='envsubst < "$CONNECT_CONFIG_TPL"'
+alias diff-config-connect='render-config-connect | sudo diff -u --label /etc/rstudio-connect/rstudio-connect.gcfg --label render-config-connect /etc/rstudio-connect/rstudio-connect.gcfg -'
 
 alias enc-value-connect="sudo /opt/rstudio-connect/bin/rscadmin encrypt-config-value"
 
