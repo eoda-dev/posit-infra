@@ -55,6 +55,11 @@ Provider = SQlite
 
 ;PermittedLoginGroup = "connect-users"
 
+;[SAML]
+;IdPMetaDataURL = "https://login.microsoftonline.com/<tenant-id>/federationmetadata/2007-06/federationmetadata.xml?appid=<app-id>"
+;IdPMetaDataURL = "${SAML_META_DATA_URL}"
+;IdPAttributeProfile = "azure"
+
 [RPackageRepository "CRAN"]
 ; echo https://packagemanager.posit.co/cran/__linux__/$(lsb_release -cs)/latest
 ;URL = ${R_PACKAGE_REPOSITORY}

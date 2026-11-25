@@ -49,6 +49,7 @@ alias render-config-connect='envsubst < "$CONNECT_CONFIG_TPL"'
 alias diff-config-connect='render-config-connect | sudo diff -u --label /etc/rstudio-connect/rstudio-connect.gcfg --label render-config-connect /etc/rstudio-connect/rstudio-connect.gcfg -'
 
 alias enc-value-connect="sudo /opt/rstudio-connect/bin/rscadmin encrypt-config-value"
+alias saml-callback-url-connect='echo "https://$FQDN/__login__/saml"'
 
 alias rpm-binary-url="echo https://packagemanager.posit.co/cran/__linux__/$(lsb_release -cs)/latest"
 
