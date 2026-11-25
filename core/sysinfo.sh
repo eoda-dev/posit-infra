@@ -27,6 +27,25 @@ if [ "$IS_ROOT" -eq 1 ] && have dmidecode; then
   echo "System:    $(dmidecode -s system-manufacturer 2>/dev/null) $(dmidecode -s system-product-name 2>/dev/null)"
 fi
 
+# List installed versions under /opt, mark the one /usr/local/bin points to
+# Usage: opt_versions LABEL DIR BIN (BIN relative to the version dir)
+opt_versions() {
+  default="$(readlink -f "/usr/local/bin/$(basename "$3")" 2>/dev/null || true)"
+  found=""
+  for d in "$2"/[0-9]*; do
+    [ -x "$d/$3" ] || continue
+    v="$(basename "$d")"
+    [ -n "$default" ] && [ "$(readlink -f "$d/$3")" = "$default" ] && v="$v (default)"
+    found="${found:+$found, }$v"
+  done
+  printf '%-10s %s\n' "$1:" "${found:-none}"
+}
+
+section "R / Python / Quarto (/opt)"
+opt_versions "R" /opt/R bin/R
+opt_versions "Python" /opt/python bin/python3
+opt_versions "Quarto" /opt/quarto bin/quarto
+
 section "CPU"
 if have lscpu; then
   lscpu | grep -E '^(Model name|Architecture|CPU\(s\)|Thread\(s\) per core|Core\(s\) per socket|Socket\(s\)|CPU max MHz):'
