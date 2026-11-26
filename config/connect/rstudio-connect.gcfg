@@ -3,6 +3,17 @@ Address = https://${FQDN}
 ;ServerName = ""
 EmailProvider = "none"
 
+;EmailProvider = "SMTP"
+;SenderEmail = "${CONNECT_SENDER_EMAIL}"
+;SenderEmailDisplayName = "Posit Connect"
+
+[SMTP]
+;Host = "smtp.office365.com"
+;Port = ${SMTP_PORT}
+;StartTLS = "detect"
+;User = "connect@example.com"
+;Password = ""
+
 ; sudo rsync -a /var/lib/rstudio-connect/ ${CONNECT_DATA_DIR}
 ;DataDir = ${CONNECT_DATA_DIR}
 
