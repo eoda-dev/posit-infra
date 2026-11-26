@@ -1,3 +1,5 @@
+# Start (from this folder): Rscript -e 'shiny::runApp(port = 8080, launch.browser = FALSE)'
+
 # os_release <- readLines("/etc/os-release")
 # codename <- sub("^VERSION_CODENAME=", "", grep("^VERSION_CODENAME=", os_release, value = TRUE))
 # options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/", codename, "/latest")))
@@ -43,7 +45,9 @@ ui <- fluidPage(
       h3("Did you know?"),
       wellPanel(textOutput("fact")),
       h3("Selected albums"),
-      tableOutput("albums")
+      tableOutput("albums"),
+      h3("Database test"),
+      uiOutput("db_test")
     )
   )
 )
@@ -57,6 +61,19 @@ server <- function(input, output, session) {
   output$albums <- renderTable({
     albums[albums$year >= input$years[1] & albums$year <= input$years[2], ]
   }, digits = 0)
+
+  # Read the table written by db/test-pg-conn.R, show the error if that fails
+  output$db_test <- renderUI({
+    tryCatch({
+      con <- odbc::dbConnect(odbc::odbc(), dsn = Sys.getenv("ODBCINI_DSN", "postgresql-test"))
+      on.exit(DBI::dbDisconnect(con), add = TRUE)
+      tbl <- DBI::Id(schema = Sys.getenv("PG_SCHEMA", "public"), table = "test_r_faithful")
+      df <- DBI::dbReadTable(con, tbl)
+      tags$pre(paste(capture.output(print(head(df))), collapse = "\n"))
+    }, error = function(e) {
+      tags$pre(paste("Error:", conditionMessage(e)))
+    })
+  })
 }
 
 shinyApp(ui, server)
