@@ -13,8 +13,8 @@ source <(curl -fsSL https://raw.githubusercontent.com/eoda-dev/posit-infra/main/
 # connect starter config
 basic-config-connect | sudo tee /etc/rstudio-connect/rstudio-connect.gcfg
 
-# write connect config from your own template (back up the current one first)
-backup-config-connect
-render-config-connect | write-config-connect
+# write connect config from your own template (check, then back up and write)
+diff-config-connect
+apply-config-connect
 ```
 

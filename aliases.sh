@@ -37,7 +37,6 @@ alias stop-rstudio='podman stop "${RSTUDIO_CONTAINER:-rstudio}"'
 
 alias config-connect="sudo vi /etc/rstudio-connect/rstudio-connect.gcfg"
 alias backup-config-connect='(f=/etc/rstudio-connect/rstudio-connect.gcfg; b="$f.bak.$(date +%Y%m%d-%H%M%S)"; sudo cp -p "$f" "$b" && echo "Backup: $b")'
-alias write-config-connect="sudo tee /etc/rstudio-connect/rstudio-connect.gcfg >/dev/null"
 alias logs-connect='GREEN="\033[0;32m" && NC="\033[0m" && echo -e ${GREEN}"\n Posit Connect Logs:\n"${NC} && sudo tail -n 15 /var/log/rstudio/rstudio-connect/rstudio-connect.log'
 alias license-status-connect="sudo /opt/rstudio-connect/bin/license-manager status"
 
@@ -47,6 +46,7 @@ alias basic-config-connect="curl -fsSL https://raw.githubusercontent.com/eoda-de
 alias config-connect-tpl='vim "$CONNECT_CONFIG_TPL"'
 alias render-config-connect='envsubst < "$CONNECT_CONFIG_TPL"'
 alias diff-config-connect='render-config-connect | sudo diff -u --label /etc/rstudio-connect/rstudio-connect.gcfg --label render-config-connect /etc/rstudio-connect/rstudio-connect.gcfg -'
+alias apply-config-connect='backup-config-connect && render-config-connect | sudo tee /etc/rstudio-connect/rstudio-connect.gcfg >/dev/null'
 
 alias enc-value-connect="sudo /opt/rstudio-connect/bin/rscadmin encrypt-config-value"
 alias saml-callback-url-connect='echo "https://$FQDN/__login__/saml"'
