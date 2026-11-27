@@ -8,6 +8,7 @@ library(shiny)
 
 dsn <- Sys.getenv("ODBCINI_DSN", "postgresql-test")
 schema <- Sys.getenv("PG_SCHEMA", "public")
+connect_server <- Sys.getenv("CONNECT_SERVER", "(not set)")
 
 ui <- fluidPage(
   titlePanel("DB inspector"),
@@ -15,6 +16,7 @@ ui <- fluidPage(
     sidebarPanel(
       p(strong("DSN: "), dsn),
       p(strong("Schema: "), schema),
+      p(strong("CONNECT_SERVER: "), connect_server),
       uiOutput("table_select")
     ),
     mainPanel(
